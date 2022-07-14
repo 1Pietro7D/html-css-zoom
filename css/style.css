@@ -10,6 +10,10 @@ body {
   background-color: black;
 }
 
+i {
+  padding: 5px;
+}
+
 /**** /Generics ****/
 
 /****** HEADER ******/
@@ -43,7 +47,7 @@ main .grid {
   height: 100%;
   grid-template-columns: auto auto auto auto auto auto auto;
   gap: 1% 1%;
-  padding: 2%;
+  padding: 2% 4%;
 }
 .item {
   background-image: url(https://picsum.photos/1900/1080);
@@ -63,7 +67,24 @@ main .grid {
 
 footer {
   height: 10vh;
-  background-color: red;
+  color: #fff;
+}
+footer > div > .flex.al-center {
+  padding: 0 10px;
+}
+footer i {
+  font-size: 1.2em;
+}
+footer p {
+  font-size: 0.6em;
+  text-transform: capitalize;
+}
+
+#end-meeting {
+  background-color: hsl(0deg 0% 29%);
+  color: red;
+  padding: 0 20px;
+  border: 0;
 }
 
 /******  /FOOTER ******/
@@ -79,6 +100,9 @@ footer {
 .j-between {
   justify-content: space-between;
 }
+.j-center {
+  /*justify-content: center;*/
+}
 
 .j-end {
   justify-content: flex-end;
@@ -90,9 +114,7 @@ footer {
 .h100 {
   height: 100vh;
 }
-
-i {
-  padding: 5px;
+.green {
+  color: rgb(3, 202, 3);
 }
-
 /********* /UTILITIES *********/
