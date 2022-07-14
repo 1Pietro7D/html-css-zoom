@@ -1,0 +1,98 @@
+/**** Generics ****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} /* /reset */
+
+body {
+  background-color: black;
+}
+
+/**** /Generics ****/
+
+/****** HEADER ******/
+
+header {
+  height: 5vh;
+  color: #fff;
+}
+header > button {
+  background-color: grey;
+  color: #fff;
+  padding: 5px;
+  border-radius: 100px;
+  margin: 0px 10px;
+  font-size: 1.2em;
+}
+#x {
+  transform: rotate(45deg);
+}
+/****** /HEADER ******/
+
+/****** MAIN ******/
+main {
+  overflow-y: overlay;
+  height: 85vh;
+}
+
+main .grid {
+  display: grid;
+  grid-auto-flow: row;
+  height: 100%;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  gap: 1% 1%;
+  padding: 2%;
+}
+.item {
+  background-image: url(https://picsum.photos/1900/1080);
+  background-size: cover;
+  position: relative;
+}
+.item > p {
+  background-color: rgba(192, 192, 192, 0.3);
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+
+/****** /MAIN ******/
+
+/****** FOOTER ******/
+
+footer {
+  height: 10vh;
+  background-color: red;
+}
+
+/******  /FOOTER ******/
+
+/********* UTILITIES *********/
+
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.j-between {
+  justify-content: space-between;
+}
+
+.j-end {
+  justify-content: flex-end;
+}
+.al-center {
+  align-items: center;
+}
+
+.h100 {
+  height: 100vh;
+}
+
+i {
+  padding: 5px;
+}
+
+/********* /UTILITIES *********/
