@@ -19,16 +19,16 @@ i {
 /****** HEADER ******/
 
 header {
-  height: 5vh;
+  padding: 10px;
   color: #fff;
 }
 header > button {
   background-color: grey;
   color: #fff;
-  padding: 5px;
-  border-radius: 100px;
-  margin: 0px 10px;
+  padding: 3px;
+  border-radius: 5px;
   font-size: 1.2em;
+  margin-left: 10px;
 }
 #x {
   transform: rotate(45deg);
@@ -38,7 +38,7 @@ header > button {
 /****** MAIN ******/
 main {
   overflow-y: overlay;
-  height: 85vh;
+  flex-grow: 1;
 }
 
 main .grid {
@@ -67,24 +67,28 @@ main .grid {
 
 footer {
   height: 10vh;
-  color: #fff;
+  background-color: hsl(0deg 0% 13%);
 }
 footer > div > .flex.al-center {
   padding: 0 10px;
 }
-footer i {
-  font-size: 1.2em;
-}
-footer p {
+
+footer button {
   font-size: 0.6em;
   text-transform: capitalize;
+  color: #fff;
+  border: 0;
+  background-color: hsl(0deg 0% 13%);
+}
+
+footer button > i {
+  font-size: large;
 }
 
 #end-meeting {
   background-color: hsl(0deg 0% 29%);
   color: red;
   padding: 0 20px;
-  border: 0;
 }
 
 /******  /FOOTER ******/
